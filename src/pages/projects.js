@@ -4,7 +4,7 @@ import get from "lodash/get";
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 
-class BlogIndex extends React.Component {
+class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
 
@@ -12,12 +12,13 @@ class BlogIndex extends React.Component {
       <Layout>
         <div>
           <Helmet title={siteTitle} />
+          <h1>Hello, Projects!</h1>
         </div>
       </Layout>
     );
   }
 }
 
-export default BlogIndex;
+export default RootIndex;
 
-// export const pageQuery = graphql``;
+// export const pageQuery = graphql``
