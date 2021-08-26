@@ -7,7 +7,7 @@ const contentfulConfig = {
   accessToken:
     process.env.CONTENTFUL_ACCESS_TOKEN ||
     process.env.CONTENTFUL_DELIVERY_TOKEN,
-    downloadLocal: true
+  downloadLocal: true,
 };
 
 // If you want to use the preview API please define
@@ -41,6 +41,7 @@ module.exports = {
   },
   pathPrefix: "/gatsby-contentful-starter",
   plugins: [
+    "gatsby-plugin-postcss",
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
